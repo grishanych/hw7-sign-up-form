@@ -1,25 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>HW-7-sign-up-form</title>
 </head>
+
 <body>
     <main class="main">
-        <nav class="main-nav">
-            <div class="main-nav-left">JOURNEY</div>
-                    <div class="main-nav-right">
-                <img src="images/nav-calendar.svg">
-                <img src="images/nav-mail.svg">
-                <img src="images/nav-compass.svg">
+        <div class="main-div-nav">
+            <nav class="main-nav">
+                <div class="main-nav-left">JOURNEY</div>
+                <div class="main-nav-right">
+                    <img src="images/nav-calendar.svg">
+                    <img src="images/nav-mail.svg">
+                    <img src="images/nav-compass.svg">
+                    <hr>
+                    <span class="main-nav-right-span">Welcome, Log In or Sign Up</span>
+                </div>
+            </nav>
+        </div>
+
+        <section class="log-form">
+            <div class="green-square"></div>
+            <div class="reg-form">
+                <a href="#" class="sign-log-in">
+                    <p class="log-form-sign-in">Sign Up</p>
+                    <p class="log-form-log-in">Log In</p>
+                </a>
+                <div class="log-form-social">
+                    <a href="https://www.facebook.com" target="_blank" class="social facebook">
+                        <div class="social-inside-facebook"><img src="./images/facebook.svg" alt="facebook">
+                            <hr>Facebook
+                        </div>
+                    </a>
+                    <a href="https://www.google.com/" target="_blank" class="social google">
+                        <div class="social-inside-google"><img src="./images/google.svg" alt="google">
+                            <hr class="inside-google-hr">Google
+                        </div>
+                    </a>
+                </div>
+
+                <div class="line-to-reg">
+                    <hr><span>or</span>
+                    <hr>
+                </div>
+                <input type="text" class="reg-input type-name" required placeholder="Name">
+                <input type="text" class="reg-input type-last-name" required placeholder="Last Name">
+                <input type="email" class="reg-input type-email" placeholder="Email">
+                <input type="password" class="reg-input type-password" required placeholder="Choose Password">
+                <input type="password" class="reg-input type-password" required placeholder="Confirm Password">
+
+                <div class="check-agree">
+                    <input type="checkbox" id="check-agree-select" name="login">
+                    <label for="check-agree-select">Agree with our <span>Terms & Conditions</span></label>
+                </div>
+
+                <div class="create-account-btn">
+                    Create Account
+                </div>
             </div>
 
-        </nav>
+
+
+        </section>
 
     </main>
-   
+
 </body>
+
 </html>
