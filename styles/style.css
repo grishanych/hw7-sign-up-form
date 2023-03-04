@@ -34,10 +34,23 @@
     color: #fff;
 }
 
+.main-nav-left:hover {
+    color: #01813f;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
 .main-nav-right {
     display: flex;
     align-items: center;
     gap: 25px;
+}
+.nav-calendar :hover,
+.nav-mail :hover,
+.nav-compass :hover {
+    fill: #01813f;
+    cursor: pointer;
+    transition: 0.7s;
 }
 
 hr {
@@ -47,7 +60,8 @@ hr {
     background-color: #fff;
 }
 
-.main-nav-right-span {
+.main-nav-right-span,
+.nav-link-log {
     font-family: "Ubuntu";
     font-style: normal;
     font-weight: 400;
@@ -56,25 +70,29 @@ hr {
     color: #ffffff;
 }
 
+.nav-link-log {
+    text-decoration: none;
+}
+
+.nav-link-log:hover {
+    color: #01813f;
+    transition: 0.7s;
+}
+
 .log-form {
-    position: relative;
     margin: auto;
     width: 444px;
-    /* height: 584px; */
-    /* width: calc(1208px + 79px + 79px - 461px - 461px ); */
-    left: calc(50% - 100vw/2);
     height: 614px;
-    top: 54px;
+    margin-top: calc(50vh - 614px / 2);
     background-color: #fff;
 }
 
 .green-square {
-    position: absolute;
+    float: left;
+    margin-top: 31px;
     width: 18px;
     height: 18px;
     background-color: #3cb878;
-    top: 29px;
-    left: 0;
 }
 
 .reg-form {
@@ -107,6 +125,11 @@ hr {
     font-size: 14px;
     line-height: 14px;
     color: #3cb878;
+}
+
+.log-form-log-in:hover {
+    color: #01813f;
+    transition: 0.7s;
 }
 
 .log-form-social {
@@ -143,6 +166,11 @@ hr {
     background-color: #305db8;
 }
 
+.facebook:hover {
+    background-color: #022263;
+    transition: 0.7s;
+}
+
 .social-inside-facebook {
     margin-left: 16px;
     display: flex;
@@ -152,22 +180,24 @@ hr {
 }
 
 .social-inside-google {
-    margin-left: 12px;
+    margin: 0 27px 0 12px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 38px;
+    justify-content: space-between;
 }
 
 .google {
     width: 160px;
     background-color: #df4a32;
 }
+.google:hover {
+    background-color: #ab1f09;
+    transition: 0.7s;
+}
 
 .inside-google-hr {
-    position: absolute;
-    font-size: 0;
-    right: 110px;
+    margin-left: -20px;
 }
 
 .line-to-reg {
@@ -230,6 +260,11 @@ hr {
     color: #3cb878;
 }
 
+.check-agree span:hover {
+    color: #01813f;
+    transition: 0.7s;
+}
+
 input[type="checkbox"] {
     display: none;
 }
@@ -266,4 +301,9 @@ input[type="checkbox"]:checked + label::before {
     border: none;
     width: 100%;
     cursor: pointer;
+}
+
+.create-account-btn:hover {
+    background-color: #01813f;
+    transition: 0.7s;
 }
